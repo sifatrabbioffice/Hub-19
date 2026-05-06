@@ -1,0 +1,22 @@
+name: GameHub
+options:
+  bundleIdPrefix: com.gamehub.emulator
+targets:
+  GameHub:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [GameHub]
+    settings:
+      base:
+        INFOPLIST_FILE: GameHub/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        PRODUCT_BUNDLE_IDENTIFIER: com.gamehub.emulator.pro
+        MARKETING_VERSION: 2.0
+        CURRENT_PROJECT_VERSION: 1
+        # Target iPhone only
+        TARGETED_DEVICE_FAMILY: 1
+        # Graphics and Performance
+        MTL_ENABLE_DEBUG_INFO: NO
+        GCC_OPTIMIZATION_LEVEL: s
+        SWIFT_OPTIMIZATION_LEVEL: -O
